@@ -1,0 +1,15 @@
+{
+    "name": "dutalapak",
+    "version": "1.2.0",
+    "short_name": "dutalapak",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#f0f0f0",
+    "theme_color": "#499D7B",
+    "description": "make dutalapak PWA",
+    "icons": [{
+        "src": "/static/img/favi.png",
+        "sizes": "512x512",
+        "type": "image/png"
+    }]
+}

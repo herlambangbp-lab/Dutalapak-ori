@@ -1,0 +1,198 @@
+{
+    "Data": {
+        "ProductList": [
+            {
+                "ProductId": 11,
+                "Title": "lolipop",
+                "Image": "/static/img/DL/swipe.gif",
+                "Brand": null,
+                "SellPrice": 10000.00,
+                "LowPrice": 0,
+                "HighPrice": 0,
+                "ProductCode": "b3df0917-cce5-4718-8e36-f64cb6602ab4",
+                "DiscountPrice": null,
+                "TotalStock": 11
+            },
+            {
+                "ProductId": 12,
+                "Title": "pencil",
+                "Image": "/static/img/DL/swipe.gif",
+                "Brand": "hype",
+                "SellPrice": 100.00,
+                "LowPrice": 0,
+                "HighPrice": 0,
+                "ProductCode": "371d5f02-9cb1-4a26-9fdc-ab27d759b888",
+                "DiscountPrice": null,
+                "TotalStock": 0
+            },
+            {
+                "ProductId": 13,
+                "Title": "yoyo",
+                "Image": "/static/img/DL/swipe.gif",
+                "Brand": "hype",
+                "SellPrice": 1000.00,
+                "LowPrice": 0,
+                "HighPrice": 0,
+                "ProductCode": "6dd4eafd-8e26-424c-b2e5-e6fbf2d86e15",
+                "DiscountPrice": null,
+                "TotalStock": 13
+            },
+            {
+                "ProductId": 14,
+                "Title": "busa",
+                "Image": "/static/img/DL/swipe.gif",
+                "Brand": "hype",
+                "SellPrice": 200.00,
+                "LowPrice": 0,
+                "HighPrice": 0,
+                "ProductCode": "779c8f23-fb2b-4f10-9c2e-7e6c29690336",
+                "DiscountPrice": null,
+                "TotalStock": 14
+            },
+            {
+                "ProductId": 15,
+                "Title": "pentol",
+                "Image": "/static/img/DL/swipe.gif",
+                "Brand": "hype",
+                "SellPrice": 200.00,
+                "LowPrice": 0,
+                "HighPrice": 0,
+                "ProductCode": "2d558334-ffb6-4934-abca-290939afe038",
+                "DiscountPrice": null,
+                "TotalStock": 15
+            }
+        ],
+        "ProductRecomended": [
+            {
+                "ProductId": 11,
+                "Title": "lolipop",
+                "Image": "/static/img/DL/swipe.gif",
+                "Brand": null,
+                "SellPrice": 10000.00,
+                "LowPrice": 0,
+                "HighPrice": 0,
+                "ProductCode": "b3df0917-cce5-4718-8e36-f64cb6602ab4",
+                "DiscountPrice": null,
+                "TotalStock": 11
+            },
+            {
+                "ProductId": 12,
+                "Title": "pencil",
+                "Image": "/static/img/DL/swipe.gif",
+                "Brand": "hype",
+                "SellPrice": 100.00,
+                "LowPrice": 0,
+                "HighPrice": 0,
+                "ProductCode": "371d5f02-9cb1-4a26-9fdc-ab27d759b888",
+                "DiscountPrice": null,
+                "TotalStock": 0
+            },
+            {
+                "ProductId": 13,
+                "Title": "yoyo",
+                "Image": "/static/img/DL/swipe.gif",
+                "Brand": "hype",
+                "SellPrice": 1000.00,
+                "LowPrice": 0,
+                "HighPrice": 0,
+                "ProductCode": "6dd4eafd-8e26-424c-b2e5-e6fbf2d86e15",
+                "DiscountPrice": null,
+                "TotalStock": 13
+            },
+            {
+                "ProductId": 14,
+                "Title": "busa",
+                "Image": "/static/img/DL/swipe.gif",
+                "Brand": "hype",
+                "SellPrice": 200.00,
+                "LowPrice": 0,
+                "HighPrice": 0,
+                "ProductCode": "779c8f23-fb2b-4f10-9c2e-7e6c29690336",
+                "DiscountPrice": null,
+                "TotalStock": 14
+            },
+            {
+                "ProductId": 15,
+                "Title": "pentol",
+                "Image": "/static/img/DL/swipe.gif",
+                "Brand": "hype",
+                "SellPrice": 200.00,
+                "LowPrice": 0,
+                "HighPrice": 0,
+                "ProductCode": "2d558334-ffb6-4934-abca-290939afe038",
+                "DiscountPrice": null,
+                "TotalStock": 15
+            }
+        ],
+        "ProductBestSeller": [
+            {
+                "ProductId": 11,
+                "Title": "lolipop",
+                "Image": "/static/img/DL/swipe.gif",
+                "Brand": null,
+                "SellPrice": 10000.00,
+                "LowPrice": 0,
+                "HighPrice": 0,
+                "ProductCode": "b3df0917-cce5-4718-8e36-f64cb6602ab4",
+                "DiscountPrice": null,
+                "TotalStock": 11
+            },
+            {
+                "ProductId": 12,
+                "Title": "pencil",
+                "Image": "/static/img/DL/swipe.gif",
+                "Brand": "hype",
+                "SellPrice": 100.00,
+                "LowPrice": 0,
+                "HighPrice": 0,
+                "ProductCode": "371d5f02-9cb1-4a26-9fdc-ab27d759b888",
+                "DiscountPrice": null,
+                "TotalStock": 0
+            },
+            {
+                "ProductId": 13,
+                "Title": "yoyo",
+                "Image": "/static/img/DL/swipe.gif",
+                "Brand": "hype",
+                "SellPrice": 1000.00,
+                "LowPrice": 0,
+                "HighPrice": 0,
+                "ProductCode": "6dd4eafd-8e26-424c-b2e5-e6fbf2d86e15",
+                "DiscountPrice": null,
+                "TotalStock": 13
+            },
+            {
+                "ProductId": 14,
+                "Title": "busa",
+                "Image": "/static/img/DL/swipe.gif",
+                "Brand": "hype",
+                "SellPrice": 200.00,
+                "LowPrice": 0,
+                "HighPrice": 0,
+                "ProductCode": "779c8f23-fb2b-4f10-9c2e-7e6c29690336",
+                "DiscountPrice": null,
+                "TotalStock": 14
+            },
+            {
+                "ProductId": 15,
+                "Title": "pentol",
+                "Image": "/static/img/DL/swipe.gif",
+                "Brand": "hype",
+                "SellPrice": 200.00,
+                "LowPrice": 0,
+                "HighPrice": 0,
+                "ProductCode": "2d558334-ffb6-4934-abca-290939afe038",
+                "DiscountPrice": null,
+                "TotalStock": 15
+            }
+        ],
+        "productDetailViewModels": null,
+        "ProductRelated": null,
+        "GrosirPriceList": null
+    },
+    "StatusCode": 200,
+    "ResponseMessage": null,
+    "ErrorMessage": null,
+    "AccessToken": null,
+    "returnUrl": null
+}

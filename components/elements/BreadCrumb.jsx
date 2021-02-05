@@ -1,0 +1,40 @@
+import React from 'react';
+import Link from 'next/link';
+import { SearchOutlined } from '@ant-design/icons';
+import { Button, Tooltip } from 'antd';
+const BreadCrumb = ({ breacrumb, layout }) => {
+    return (
+        <div className="ps-breadcrumb">
+            <div
+                className={
+                    layout === 'fullwidth' ? 'ps-container' : 'container'
+                }>
+                <ul className="breadcrumb">
+                    {breacrumb.map(item => {
+                        if (!item.url) {
+                            return <li key={item.text}>{item.text}</li>;
+                        } else {
+                            return (
+                                <li key={item.text}>
+                                    <Link href={item.url}>
+                                        <a>{item.text}</a>
+                                    </Link>
+
+                                </li>
+                            );
+                        }
+                    })}
+                                    
+
+                {/* <Button type="primary" className="posRight1" icon={<SearchOutlined />}>
+                    baru
+                </Button> */}
+               
+                </ul>
+
+            </div>
+        </div>
+    );
+};
+
+export default BreadCrumb;
