@@ -8,6 +8,7 @@ export const initState = {
     profilEdit:[],
     dataHistory: null,
     detailTransaksi: null,
+    dataCityWPK:null,
 };
 
 function reducer(state = initState, action) {
@@ -72,6 +73,12 @@ function reducer(state = initState, action) {
                 ...state,
                 ...{ detailTransaksi: action.payload },
                 
+            };
+        case actionTypes.DATA_CITY_WPK_SUCCESS:
+            return {
+                ...state,
+                ...{ dataCityWPK: action.payload },
+                    
             };
         
         default:

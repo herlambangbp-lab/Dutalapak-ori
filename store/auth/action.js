@@ -28,6 +28,9 @@ export const actionTypes = {
 
     DETAIL_TRANSAKSI: 'DETAIL_TRANSAKSI',
     DETAIL_TRANSAKSI_SUCCESS: 'DETAIL_TRANSAKSI_SUCCESS', 
+
+    DATA_CITY_WPK: 'DATA_CITY_WPK',
+    DATA_CITY_WPK_SUCCESS: 'DATA_CITY_WPK_SUCCESS',
 };
 
 export function login(username, password) {
@@ -158,6 +161,20 @@ export function detailTransaksi(data) {
 export function detailTransaksiSuccess(payload) {
     // console.log(data);
     return { type: actionTypes.DETAIL_TRANSAKSI_SUCCESS, 
+                payload
+    };
+}
+
+export function getDataCityWpk() {
+    // console.log(data);
+    return { type: actionTypes.DATA_CITY_WPK,
+                
+    };
+}
+
+export function getDataCityWpkSuccess(payload) {
+    // console.log(data);
+    return { type: actionTypes.DATA_CITY_WPK_SUCCESS, 
                 payload
     };
 }

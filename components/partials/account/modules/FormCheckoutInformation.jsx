@@ -652,11 +652,11 @@ class FormCheckoutInformation extends Component {
                                                 </a>
 
                                                 <a>
-                                                    Pilih Kurir
+                                                    Kurir
                                                     <small>
                                                     <p>
                                                         {/* Duta Cargo Rp 10.000 */}
-                                                        <Select defaultValue={provinceData[1]} style={{ width: 120 }} 
+                                                        <Select defaultValue={provinceData[1]} style={{ width: 60 }} 
                                                         onChange={this.handleProvinceChange}
                                                         >
                                                             {provinceData.map(province => (
@@ -673,13 +673,13 @@ class FormCheckoutInformation extends Component {
 
                                                         </Select>     
                                                         ):(
-                                                            <Select style={{ width: 120 }} 
+                                                            <Select style={{ width: 180 }} 
 
                                                             placeholder="Pilih Trif Layanan"
                                                             >
-                                                                {/* {dataCheckTarif.tariffs.map(province =>
-                                                                    <Option key={province}>{province.serviceName}&nbsp;Rp.{province.totalTariff} </Option>
-                                                                    )} */}
+                                                                {dataCheckTarif.tariffs.map(province =>
+                                                                    <Option key={province}>{province.serviceID}&nbsp;Rp.{province.totalTariff} </Option>
+                                                                    )}
     
                                                             </Select>     
                                                         )}

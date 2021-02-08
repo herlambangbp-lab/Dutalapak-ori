@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import  Router  from 'next/router';
 import Link from 'next/link';
-import { Form, Input, Radio, DatePicker } from 'antd';
-import { updateProfil } from '../../../store/auth/action';
-
+import { Form, Input, Radio, DatePicker, Select } from 'antd';
+import { updateProfil, getDataCityWpk } from '../../../store/auth/action';
+// import { Select } from 'antd';
 // import { logOut } from '../../../store/auth/action';
 
 class UserInformation extends Component {
@@ -26,7 +26,7 @@ class UserInformation extends Component {
             Router.push('/account/login');
         }
 
-        // this.props.dispatch(editprofilReq(auth));
+        this.props.dispatch(getDataCityWpk());
 
 
     }
@@ -38,22 +38,30 @@ class UserInformation extends Component {
             AccessTokenUser: AccessToken,
             RequestVerificationTokenUser: RequestVerificationToken,
         }
-        // console.log(data);
-        // console.log(e);
+
         this.props.dispatch(updateProfil(data));
-        // e.preventDefault();
-        // const productVarian = value;
-        // const Dproducts = this.props.product.VariantList[0].VariantDetailList[value];
-        // const Dstoct = Dproducts.stockAvailable;
 
-        // this.setState({pilihVarian: 1})
-        // this.setState({productVariat: Dproducts})
-        // this.setState({productVariantStoct: Dstoct})
     };
+    // const { Option } = Select;
 
+    onChange(value) {
+      console.log(`selected ${value}`);
+    }
+    
+    onBlur() {
+      console.log('blur');
+    }
+    
+    onFocus() {
+      console.log('focus');
+    }
+    
+    onSearch(val) {
+      console.log('search:', val);
+    }
     render() {
-        // console.log(this.props);
-        
+        console.log(this.props);
+        const { Option } = Select;
         const accountLinks = [
             {
                 text: 'Account Information',
@@ -61,26 +69,11 @@ class UserInformation extends Component {
                 icon: 'icon-user',
                 active: true,
             },
-            // {
-            //     text: 'Notifications',
-            //     url: '/account/notifications',
-            //     icon: 'icon-alarm-ringing',
-            // },
             {
                 text: 'Transaksi',
                 url: '/account/invoices',
                 icon: 'icon-papers',
             },
-            // {
-            //     text: 'Address',
-            //     url: '/account/addresses',
-            //     icon: 'icon-map-marker',
-            // },
-            // {
-            //     text: 'Recent Viewed Product',
-            //     url: '/account/recent-viewed-product',
-            //     icon: 'icon-store',
-            // },
             {
                 text: 'Wishlist',
                 url: '/account/wishlist',
@@ -127,14 +120,7 @@ class UserInformation extends Component {
                                                     </Link>
                                                 </li>
                                             ))}
-                                            {/* <li>
-                                                <Link href="/account/">
-                                                    <a>
-                                                        <i className="icon-power-switch"></i>
-                                                        Logout
-                                                    </a>
-                                                </Link>
-                                            </li> */}
+
                                         </ul>
                                     </div>
                                 </aside>
@@ -153,6 +139,7 @@ class UserInformation extends Component {
                                         <div className="row">
                                             <div className="col-sm-3">
                                                 <div className="form-group">
+
                                                     <Form.Item
                                                         label="username"
                                                         name="username"

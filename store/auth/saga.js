@@ -9,11 +9,12 @@ import {    actionTypes,
             logOutSuccess, 
             regisSuccess,
             editprofilReqSuccess,
-            updateProfilSuccess,
+            // updateProfilSuccess,
             checkAuthSuccess,
             updateTransaksiHistorySuccess,
-            testConnectSuccess,
-            detailTransaksiSuccess
+            // testConnectSuccess,
+            detailTransaksiSuccess,
+            getDataCityWpkSuccess,
         } from './action';
 const modalSuccess = type => {
     notification[type]({
@@ -281,6 +282,22 @@ function* detailTransaksiSaga(data) {
         console.log(err);
     }
 }
+function* getDataCityWpkSaga() {
+    try {
+        console.log('wpkguys');
+        const reqCityWPK = yield call(
+            UserAccessRepository.getCityWPK,
+            
+        );
+
+        // console.log(reqCityWPK);
+        yield put(getDataCityWpkSuccess(reqCityWPK));
+
+    } catch (err) {
+        console.log(err);
+    }
+}
+
 
 
 
@@ -293,5 +310,7 @@ export default function* rootSaga() {
     yield all([takeEvery(actionTypes.UPDATE_TRANSAKSI_HISTORY, updateTransaksiHistorySaga)]);
     yield all([takeEvery(actionTypes.TEST_CONNECT, testConnectSaga)]);
     yield all([takeEvery(actionTypes.DETAIL_TRANSAKSI, detailTransaksiSaga)]);
+    yield all([takeEvery(actionTypes.DATA_CITY_WPK, getDataCityWpkSaga)]);
+    
     // DETAIL_TRANSAKSI
 }

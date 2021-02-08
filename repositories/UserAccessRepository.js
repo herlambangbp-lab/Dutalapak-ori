@@ -190,6 +190,41 @@ async getTransaksiDetail(data){
 
 }
 
+async getCityWPK(){
+  // console.log(data);
+  // const body = {
+  //   AccToken : data.data.acc,
+  // };
+  const reponse = await Repository.get(`${baseUrl}/member/getCityWPK`,{
+    params: {
+      // AccToken: ,
+      // orderNumber: data.numTransaksi,
+      // code: payload.payload,
+    }, 
+    headers: {
+      'appid': appid,
+      // 'RequestVerificationToken': data.reqVerif,
+
+    }
+  
+
+  })
+  // body, {
+  //   headers: {
+  //     'appid': appid,
+  //     'RequestVerificationToken': data.data.req,
+
+  //   }
+  .then((res) => {
+    // console.log(res.data);
+    return res.data;
+      
+    })
+  .catch(error => ({ error: JSON.stringify(error) }));
+    return reponse;
+
+}
+
 
 
 }

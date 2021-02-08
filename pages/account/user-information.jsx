@@ -37,7 +37,7 @@ const UserInformationPage = () => {
                 <UserInformation />
 
 
-                f
+                
             </div>
             <Newsletters layout="container" />
             <FooterDefault />
