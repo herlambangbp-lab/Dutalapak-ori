@@ -656,7 +656,7 @@ class FormCheckoutInformation extends Component {
                                                     <small>
                                                     <p>
                                                         {/* Duta Cargo Rp 10.000 */}
-                                                        <Select defaultValue={provinceData[1]} style={{ width: 60 }} 
+                                                        <Select defaultValue={provinceData[1]} style={{ width: 100 }} 
                                                         onChange={this.handleProvinceChange}
                                                         >
                                                             {provinceData.map(province => (
@@ -673,7 +673,7 @@ class FormCheckoutInformation extends Component {
 
                                                         </Select>     
                                                         ):(
-                                                            <Select style={{ width: 180 }} 
+                                                            <Select style={{ width: 160 }} 
 
                                                             placeholder="Pilih Trif Layanan"
                                                             >
